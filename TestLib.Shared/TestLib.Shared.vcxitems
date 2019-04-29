@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{7c284e4f-0b5a-4ff0-bad3-aab9fdde98e0}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CabMsZipTest.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)HANDLEPtr.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)LibarchiveException.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)LibarchivePtr.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)LibarchiveStream.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)stdafx.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Test.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Win32Exception.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CabMsZipTest.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)HANDLEPtr.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ITest.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)LibarchiveException.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)LibarchivePtr.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)LibarchiveStream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)stdafx.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)targetver.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Test.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Win32Exception.h" />
+  </ItemGroup>
+</Project>
